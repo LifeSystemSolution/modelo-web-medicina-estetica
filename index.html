@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta charset="utf-8">
+<title>LifeSystem Estétic</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Medicina estética en Miraflores, Lima: bioestimuladores, armonización facial, enzimas y rejuvenecimiento con evaluación médica personalizada. Agenda por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Oswald:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Concepto: un selector de demo arriba y tres webs completas debajo, cada una con su propio mundo visual. Cada opción es de un solo tema, elegido a propósito. */
+:root{
+  color-scheme: light;
+  /* Selector de demo */
+  --bar-bg:#14110E; --bar-fg:#EFE6D6; --bar-mut:#9C8F7C; --bar-on:#D4B47A;
+  /* A · Editorial de autora (noir dorado) */
+  --a-bg:#100E0C; --a-surface:#1A1714; --a-line:#3A322A; --a-fg:#F2EADC; --a-mut:#B5A893; --a-gold:#D2B07A; --a-gold-deep:#A9844C;
+  /* B · Calma clínica (paleta del brief) */
+  --b-bg:#F7F3EE; --b-sand:#E8DED2; --b-sand-2:#F0E8DE; --b-fg:#2E2B29; --b-mut:#6E655D; --b-coffee:#5E4638; --b-gold:#A8844F; --b-line:#DCCFBF;
+  /* C · Guía por zonas */
+  --c-bg:#FAF8F4; --c-tile:#FFFFFF; --c-fg:#1F1D1B; --c-mut:#66605A; --c-gold:#B8893B; --c-gold-soft:#F1E6CF; --c-ink:#1F1D1B; --c-line:#E6DFD3;
+  --wa:#1F9D55;
+  --f-cormorant:"Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --f-fraunces:"Fraunces", Georgia, "Times New Roman", serif;
+  --f-oswald:"Oswald", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-dm:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-manrope:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --page:var(--a-bg);
+}
+body{background:var(--page);color:var(--a-fg);font-family:var(--f-dm);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body[data-opt="a"]{--page:var(--a-bg);color-scheme:dark}
+body[data-opt="b"]{--page:var(--b-bg)}
+body[data-opt="c"]{--page:var(--c-bg)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bar-bg)}
+*{box-sizing:border-box}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.site{display:block}
+.site[hidden]{display:none!important}
+
+/* ===== Selector de demo ===== */
+.demo-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bar-bg);color:var(--bar-fg);font-family:var(--f-dm);border-bottom:1px solid #2A241E}
+.demo-bar .wrap{display:flex;align-items:center;gap:12px;padding-block:8px;flex-wrap:wrap}
+.demo-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--bar-mut);white-space:nowrap}
+.demo-tag b{color:var(--bar-fg);font-weight:600;letter-spacing:.08em}
+.demo-tabs{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.demo-tabs a{display:flex;align-items:baseline;gap:6px;text-decoration:none;font-size:13px;padding:7px 12px;border-radius:999px;color:var(--bar-mut);white-space:nowrap;border:1px solid transparent}
+.demo-tabs a span{font-weight:600;color:var(--bar-fg)}
+.demo-tabs a[aria-current="page"]{border-color:var(--bar-on);color:var(--bar-fg);background:#231D17}
+.demo-tabs a[aria-current="page"] span{color:var(--bar-on)}
+@media (max-width:620px){.demo-tag{display:none}.demo-tabs{margin-left:0;width:100%}.demo-tabs a{flex:1;justify-content:center;padding:7px 8px;font-size:12px}.demo-tabs a em{display:none}}
+.demo-tabs a em{font-style:normal}
+
+/* ===== WhatsApp fijo ===== */
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:14px;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.22);transition:transform .2s ease}
+.wa-float:hover{transform:translateY(-2px)}
+.wa-float svg{width:22px;height:22px;flex:none}
+body[data-opt="a"] .wa-float{background:var(--a-gold);color:#17120C}
+body[data-opt="b"] .wa-float{background:var(--b-coffee);color:#fff}
+body[data-opt="c"] .wa-float{background:var(--c-ink);color:#fff;border-radius:6px}
+@media (max-width:520px){.wa-float .wa-txt{display:none}.wa-float{padding:14px}}
+
+/* =========================================================
+   OPCIÓN A · EDITORIAL DE AUTORA
+   ========================================================= */
+.opt-a{background:var(--a-bg);color:var(--a-fg)}
+.opt-a .disp{font-family:var(--f-cormorant);font-weight:500;letter-spacing:-.01em}
+.opt-a .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--a-gold)}
+.a-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.a-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.a-logo .mono{width:40px;height:40px;border:1px solid var(--a-gold);border-radius:50%;display:grid;place-items:center;font-family:var(--f-cormorant);font-size:20px;color:var(--a-gold);font-style:italic}
+.a-logo .nm{font-family:var(--f-cormorant);font-size:22px;letter-spacing:.04em;line-height:1}
+.a-logo .nm small{display:block;font-family:var(--f-dm);font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--a-mut);margin-top:4px}
+.a-nav{display:flex;gap:26px;font-size:13px;letter-spacing:.06em}
+.a-nav a{text-decoration:none;color:var(--a-mut)}
+.a-nav a:hover{color:var(--a-fg)}
+.a-btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;padding:15px 24px;border:1px solid var(--a-gold);color:var(--a-bg);background:var(--a-gold);transition:background .25s,color .25s}
+.a-btn:hover{background:transparent;color:var(--a-gold)}
+.a-btn.ghost{background:transparent;color:var(--a-gold)}
+.a-btn.ghost:hover{background:var(--a-gold);color:var(--a-bg)}
+.a-btn.sm{padding:10px 16px;font-size:11px}
+@media (max-width:860px){.a-nav{display:none}}
+
+.a-hero{position:relative;overflow:hidden;border-bottom:1px solid var(--a-line)}
+.a-hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
+.a-hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:end;padding-block:72px 64px}
+.a-hero h1{font-size:clamp(44px,7.4vw,104px);line-height:.95;margin-top:18px}
+.a-hero h1 em{color:var(--a-gold);font-style:italic}
+.a-hero .lead{font-size:18px;color:var(--a-mut);max-width:34ch;margin-top:26px}
+.a-hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.a-portrait{position:relative;aspect-ratio:3/4;max-width:100%;border-radius:200px 200px 0 0;border:1px solid var(--a-gold);background:radial-gradient(120% 80% at 50% 0%,#2B241C 0%,#15120F 70%);display:grid;place-items:center;overflow:hidden}
+.a-portrait svg{width:62%;height:auto}
+.a-portrait figcaption{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--a-mut)}
+@media (max-width:860px){.a-hero .wrap{grid-template-columns:1fr;padding-block:48px}.a-portrait{max-width:320px;justify-self:center;width:100%}}
+
+.a-sec{padding-block:96px;border-bottom:1px solid var(--a-line)}
+.a-sec-head{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:end;margin-bottom:56px}
+.a-sec-head h2{font-size:clamp(36px,5vw,64px);line-height:1}
+.a-sec-head p{color:var(--a-mut);max-width:52ch}
+@media (max-width:860px){.a-sec{padding-block:64px}.a-sec-head{grid-template-columns:1fr;gap:16px;margin-bottom:36px}}
+
+.a-about{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.a-about blockquote{margin:0;font-family:var(--f-cormorant);font-size:clamp(28px,3.4vw,42px);line-height:1.15;font-style:italic;color:var(--a-fg)}
+.a-about blockquote::before{content:"“";display:block;font-size:80px;line-height:.6;color:var(--a-gold);font-style:normal}
+.a-about .body{display:grid;gap:18px;color:var(--a-mut);max-width:60ch}
+.a-about .body strong{color:var(--a-fg);font-weight:500}
+.a-creds{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--a-line);margin-top:14px}
+.a-creds div{padding:18px 16px 0 0}
+.a-creds dt{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--a-gold)}
+.a-creds dd{margin:6px 0 0;font-family:var(--f-cormorant);font-size:22px;color:var(--a-fg)}
+@media (max-width:860px){.a-about{grid-template-columns:1fr;gap:32px}.a-creds{grid-template-columns:1fr 1fr}}
+
+.a-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.a-filters button{font:inherit;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:none;border:1px solid var(--a-line);color:var(--a-mut);padding:10px 16px;cursor:pointer;transition:all .2s}
+.a-filters button:hover{color:var(--a-fg);border-color:var(--a-mut)}
+.a-filters button[aria-pressed="true"]{border-color:var(--a-gold);color:var(--a-gold)}
+.a-index{list-style:none;margin:0;padding:0;border-top:1px solid var(--a-line)}
+.a-index li{display:grid;grid-template-columns:64px 1.1fr 1.6fr auto;gap:24px;align-items:baseline;padding-block:28px;border-bottom:1px solid var(--a-line)}
+.a-index .n{font-family:var(--f-cormorant);font-size:20px;color:var(--a-gold);font-variant-numeric:tabular-nums}
+.a-index h3{font-family:var(--f-cormorant);font-weight:500;font-size:clamp(26px,2.6vw,34px);line-height:1.05}
+.a-index .cat{display:block;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--a-mut);margin-top:8px;font-family:var(--f-dm)}
+.a-index p{color:var(--a-mut);font-size:15px;max-width:58ch}
+.a-index a{white-space:nowrap;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--a-gold);text-decoration:none;border-bottom:1px solid var(--a-gold-deep);padding-bottom:3px}
+.a-index a:hover{color:var(--a-fg)}
+@media (max-width:860px){.a-index li{grid-template-columns:40px 1fr;gap:10px 14px}.a-index p,.a-index a{grid-column:2}.a-index a{justify-self:start;margin-top:6px}}
+
+.a-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--a-gold)}
+.a-steps li{list-style:none;padding:28px 28px 0 0}
+.a-steps li+li{padding-left:28px;border-left:1px solid var(--a-line)}
+.a-steps .k{font-family:var(--f-cormorant);font-size:64px;line-height:1;color:var(--a-gold);font-style:italic}
+.a-steps h3{font-family:var(--f-cormorant);font-weight:500;font-size:28px;margin:12px 0 10px}
+.a-steps p{color:var(--a-mut);font-size:15px}
+.opt-a ol{margin:0;padding:0}
+@media (max-width:860px){.a-steps{grid-template-columns:1fr}.a-steps li,.a-steps li+li{padding:24px 0;border-left:0;border-bottom:1px solid var(--a-line)}}
+
+.a-faq{border-top:1px solid var(--a-line)}
+.a-faq details{border-bottom:1px solid var(--a-line)}
+.a-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding-block:24px;font-family:var(--f-cormorant);font-size:clamp(22px,2.4vw,30px)}
+.a-faq summary::-webkit-details-marker{display:none}
+.a-faq summary::after{content:"+";font-family:var(--f-dm);font-weight:300;font-size:26px;color:var(--a-gold);transition:transform .25s}
+.a-faq details[open] summary::after{transform:rotate(45deg)}
+.a-faq p{color:var(--a-mut);padding-bottom:26px;max-width:62ch}
+
+.a-visit{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.a-visit dl{margin:0;display:grid;gap:26px}
+.a-visit dt{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--a-gold)}
+.a-visit dd{margin:6px 0 0;font-family:var(--f-cormorant);font-size:26px;line-height:1.25}
+.a-visit dd small{display:block;font-family:var(--f-dm);font-size:13px;color:var(--a-mut);margin-top:4px}
+.a-map{position:relative;min-height:320px;border:1px solid var(--a-line);background:#16130F;overflow:hidden;display:flex;align-items:flex-end;padding:20px}
+.a-map svg.lines{position:absolute;inset:0;width:100%;height:100%}
+.a-map .pin{position:absolute;left:54%;top:42%;width:18px;height:18px;border-radius:50%;background:var(--a-gold);box-shadow:0 0 0 8px rgba(210,176,122,.18),0 0 0 18px rgba(210,176,122,.08)}
+@media (max-width:860px){.a-visit{grid-template-columns:1fr}}
+.a-social{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.a-social a{color:var(--a-mut);text-decoration:none}
+.a-social a:hover{color:var(--a-gold)}
+
+.a-foot{padding-block:48px 120px;color:var(--a-mut);font-size:13px}
+.a-foot .wrap{display:grid;gap:24px}
+.a-foot .big{font-family:var(--f-cormorant);font-size:clamp(40px,8vw,120px);line-height:.9;color:var(--a-fg);opacity:.92}
+.a-foot .big em{color:var(--a-gold)}
+.a-foot .legal{max-width:80ch;border-top:1px solid var(--a-line);padding-top:20px}
+.a-foot .links{display:flex;gap:20px;flex-wrap:wrap}
+
+/* =========================================================
+   OPCIÓN B · CALMA CLÍNICA
+   ========================================================= */
+.opt-b{background:var(--b-bg);color:var(--b-fg);font-family:var(--f-dm)}
+.opt-b .disp{font-family:var(--f-fraunces);font-weight:300;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+.opt-b .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--b-gold)}
+.opt-b .eyebrow::before{content:"";width:18px;height:1px;background:currentColor}
+.b-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px}
+.b-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--b-fg)}
+.b-logo svg{width:34px;height:34px}
+.b-logo .nm{font-family:var(--f-fraunces);font-size:20px;line-height:1}
+.b-logo .nm small{display:block;font-family:var(--f-dm);font-size:11px;color:var(--b-mut);margin-top:3px;letter-spacing:.02em}
+.b-nav{display:flex;gap:4px;background:var(--b-sand-2);padding:5px;border-radius:999px}
+.b-nav a{text-decoration:none;font-size:14px;padding:8px 14px;border-radius:999px;color:var(--b-mut)}
+.b-nav a:hover{background:var(--b-bg);color:var(--b-fg)}
+.b-btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:500;font-size:15px;padding:15px 24px;border-radius:999px;background:var(--b-coffee);color:#fff;transition:background .2s,transform .2s}
+.b-btn:hover{background:#4C382C}
+.b-btn:active{transform:scale(.98)}
+.b-btn.light{background:transparent;color:var(--b-coffee);box-shadow:inset 0 0 0 1px var(--b-coffee)}
+.b-btn.light:hover{background:var(--b-sand)}
+.b-btn.sm{padding:10px 18px;font-size:14px}
+@media (max-width:900px){.b-nav{display:none}}
+
+.b-hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-block:48px 80px}
+.b-hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1.04;margin-top:18px}
+.b-hero h1 i{font-style:italic;color:var(--b-coffee)}
+.b-hero .lead{font-size:19px;color:var(--b-mut);max-width:40ch;margin-top:22px}
+.b-hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.b-trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:36px;font-size:14px;color:var(--b-mut)}
+.b-trust span{display:flex;align-items:center;gap:8px}
+.b-trust svg{width:18px;height:18px;color:var(--b-gold)}
+.b-arch{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:999px 999px 28px 28px;background:linear-gradient(180deg,var(--b-sand) 0%,#DCCBB7 100%);overflow:hidden}
+.b-arch svg{position:absolute;inset:auto 0 0 0;width:100%;height:auto}
+.b-arch .note{position:absolute;left:18px;top:50%;transform:translateY(-50%);right:18px;text-align:center;font-family:var(--f-fraunces);font-size:15px;font-style:italic;color:var(--b-coffee);opacity:.75}
+.b-card-float{position:absolute;left:-28px;bottom:36px;background:var(--b-bg);border-radius:18px;padding:16px 18px;box-shadow:0 18px 40px rgba(94,70,56,.16);display:grid;gap:2px;max-width:240px}
+.b-card-float b{font-family:var(--f-fraunces);font-weight:400;font-size:18px}
+.b-card-float span{font-size:13px;color:var(--b-mut)}
+.b-hero-visual{position:relative}
+@media (max-width:900px){.b-hero .wrap{grid-template-columns:1fr;padding-block:24px 56px;gap:36px}.b-hero-visual{max-width:380px;width:100%;justify-self:center}.b-card-float{left:12px}}
+
+.b-sec{padding-block:88px}
+.b-sec.alt{background:var(--b-sand-2)}
+.b-sec-head{max-width:640px;margin-bottom:44px;display:grid;gap:14px}
+.b-sec-head h2{font-size:clamp(32px,4vw,48px);line-height:1.08}
+.b-sec-head p{color:var(--b-mut);font-size:17px}
+@media (max-width:900px){.b-sec{padding-block:60px}}
+
+.b-about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.b-about-photo{aspect-ratio:1;max-width:100%;border-radius:32px;background:var(--b-sand);display:grid;place-items:center;position:relative;overflow:hidden}
+.b-about-photo svg{width:56%;height:auto;color:var(--b-coffee);opacity:.8}
+.b-about-photo span{position:absolute;bottom:18px;font-size:12px;color:var(--b-mut);letter-spacing:.04em}
+.b-about .txt{display:grid;gap:18px;font-size:17px;color:var(--b-mut);max-width:58ch}
+.b-about .txt .disp{font-size:clamp(28px,3vw,38px);color:var(--b-fg);line-height:1.15}
+.b-pills{display:flex;flex-wrap:wrap;gap:8px}
+.b-pills span{font-size:13px;padding:7px 14px;border-radius:999px;background:var(--b-bg);border:1px solid var(--b-line);color:var(--b-fg)}
+@media (max-width:900px){.b-about{grid-template-columns:1fr;gap:28px}.b-about-photo{max-width:360px}}
+
+.b-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.b-filters button{font:inherit;font-size:14px;font-weight:500;border:1px solid var(--b-line);background:var(--b-bg);color:var(--b-mut);border-radius:999px;padding:10px 18px;cursor:pointer;transition:all .2s}
+.b-filters button:hover{border-color:var(--b-coffee);color:var(--b-fg)}
+.b-filters button[aria-pressed="true"]{background:var(--b-coffee);border-color:var(--b-coffee);color:#fff}
+.b-filters button .ct{font-size:12px;opacity:.7;margin-left:6px;font-variant-numeric:tabular-nums}
+.b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.b-tcard{background:var(--b-bg);border:1px solid var(--b-line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.b-tcard .tag{align-self:flex-start;font-size:12px;font-weight:500;padding:5px 12px;border-radius:999px;background:var(--b-sand);color:var(--b-coffee)}
+.b-tcard h3{font-family:var(--f-fraunces);font-weight:400;font-size:24px;line-height:1.15}
+.b-tcard p{font-size:15px;color:var(--b-mut);flex:1}
+.b-tcard a{display:inline-flex;align-items:center;gap:8px;font-weight:500;font-size:14px;color:var(--b-coffee);text-decoration:none;padding-top:14px;border-top:1px solid var(--b-line)}
+.b-tcard a:hover{color:var(--b-fg)}
+.b-tcard a svg{width:16px;height:16px}
+@media (max-width:980px){.b-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.b-grid{grid-template-columns:1fr}}
+
+.b-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0;padding:0;counter-reset:s}
+.b-steps li{list-style:none;background:var(--b-bg);border-radius:24px;padding:30px;display:grid;gap:12px;align-content:start;position:relative}
+.b-steps .num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--b-coffee);color:#fff;font-family:var(--f-fraunces);font-size:20px}
+.b-steps h3{font-family:var(--f-fraunces);font-weight:400;font-size:24px}
+.b-steps p{color:var(--b-mut);font-size:15px}
+@media (max-width:900px){.b-steps{grid-template-columns:1fr}}
+.b-center{display:flex;justify-content:center;margin-top:36px}
+
+.b-faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+.b-faq{display:grid;gap:10px}
+.b-faq details{background:var(--b-bg);border:1px solid var(--b-line);border-radius:18px;padding:0 22px}
+.b-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px;font-weight:500;font-size:17px}
+.b-faq summary::-webkit-details-marker{display:none}
+.b-faq summary::after{content:"";width:10px;height:10px;border-right:1.5px solid var(--b-coffee);border-bottom:1.5px solid var(--b-coffee);transform:rotate(45deg) translateY(-3px);transition:transform .25s;flex:none}
+.b-faq details[open] summary::after{transform:rotate(-135deg)}
+.b-faq p{color:var(--b-mut);padding-bottom:20px}
+@media (max-width:900px){.b-faq-wrap{grid-template-columns:1fr;gap:24px}}
+
+.b-visit{display:grid;grid-template-columns:1fr 1.1fr;gap:18px}
+.b-info{background:var(--b-coffee);color:#F7F3EE;border-radius:28px;padding:34px;display:grid;gap:24px;align-content:start}
+.b-info h3{font-family:var(--f-fraunces);font-weight:300;font-size:32px;line-height:1.1}
+.b-info dl{margin:0;display:grid;gap:18px}
+.b-info dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#D9C6B4}
+.b-info dd{margin:4px 0 0;font-size:17px}
+.b-info .b-btn{background:#F7F3EE;color:var(--b-coffee);justify-self:start}
+.b-info .b-btn:hover{background:var(--b-sand)}
+.b-map{border-radius:28px;background:var(--b-sand);position:relative;overflow:hidden;min-height:340px}
+.b-map svg{position:absolute;inset:0;width:100%;height:100%}
+.b-map .chip{position:absolute;left:18px;bottom:18px;right:18px;background:var(--b-bg);border-radius:16px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.b-map .chip b{font-weight:500}
+.b-map .chip span{font-size:13px;color:var(--b-mut);display:block}
+@media (max-width:900px){.b-visit{grid-template-columns:1fr}}
+
+.b-foot{background:var(--b-fg);color:#CFC6BC;padding-block:56px 120px;font-size:14px}
+.b-foot .wrap{display:grid;gap:28px}
+.b-foot .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end}
+.b-foot .top .disp{font-size:clamp(28px,4vw,44px);color:#F7F3EE;max-width:18ch;line-height:1.1}
+.b-foot .legal{border-top:1px solid #4A4541;padding-top:22px;max-width:82ch;color:#A9A097}
+.b-foot .links{display:flex;gap:20px;flex-wrap:wrap}
+.b-foot a{color:#F7F3EE}
+
+/* =========================================================
+   OPCIÓN C · GUÍA POR ZONAS
+   ========================================================= */
+.opt-c{background:var(--c-bg);color:var(--c-fg);font-family:var(--f-manrope)}
+.opt-c .cond{font-family:var(--f-oswald);text-transform:uppercase;letter-spacing:.01em;font-weight:500}
+.c-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.c-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--c-fg)}
+.c-logo .sq{width:36px;height:36px;background:var(--c-ink);color:var(--c-gold);display:grid;place-items:center;font-family:var(--f-oswald);font-weight:600;font-size:16px;letter-spacing:.02em}
+.c-logo .nm{font-family:var(--f-oswald);font-weight:500;font-size:19px;text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.c-logo .nm small{display:block;font-family:var(--f-manrope);font-size:10px;text-transform:none;letter-spacing:.06em;color:var(--c-mut);margin-top:3px;font-weight:600}
+.c-nav{display:flex;gap:22px;font-size:14px;font-weight:600}
+.c-nav a{text-decoration:none;color:var(--c-mut)}
+.c-nav a:hover{color:var(--c-fg)}
+.c-btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-oswald);text-transform:uppercase;letter-spacing:.06em;font-weight:500;font-size:15px;padding:14px 22px;background:var(--c-ink);color:#fff;border-radius:4px;transition:background .2s}
+.c-btn:hover{background:#3A3632}
+.c-btn.gold{background:var(--c-gold);color:var(--c-ink)}
+.c-btn.gold:hover{background:#CB9C4E}
+.c-btn.sm{padding:10px 16px;font-size:13px}
+@media (max-width:860px){.c-nav{display:none}}
+
+.c-hero .wrap{padding-block:36px 28px}
+.c-hero h1{font-family:var(--f-oswald);font-weight:600;text-transform:uppercase;font-size:clamp(46px,9vw,124px);line-height:.92;letter-spacing:-.01em}
+.c-hero h1 .g{color:var(--c-gold);font-style:italic}
+.c-strip{display:inline-block;margin-top:22px;background:var(--c-gold);color:var(--c-ink);font-family:var(--f-oswald);font-style:italic;text-transform:uppercase;font-weight:500;font-size:clamp(14px,1.8vw,20px);letter-spacing:.02em;padding:8px 18px;max-width:100%}
+.c-hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:28px}
+.c-hero-row p{max-width:46ch;color:var(--c-mut);font-size:17px}
+.c-hero-row .acts{display:flex;gap:10px;flex-wrap:wrap}
+
+.c-bento{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;padding-block:20px 72px}
+.tile{background:var(--c-tile);border:1px solid var(--c-line);border-radius:6px;padding:24px;min-width:0}
+.tile.dark{background:var(--c-ink);color:#EDE7DD;border-color:var(--c-ink)}
+.tile.gold{background:var(--c-gold-soft);border-color:#E7D6B3}
+.tile .lbl{font-family:var(--f-oswald);text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--c-gold);font-weight:500}
+.tile.dark .lbl{color:var(--c-gold)}
+.t-finder{grid-column:span 8;display:grid;grid-template-columns:240px 1fr;gap:24px}
+.t-side{grid-column:span 4;display:grid;gap:12px;align-content:start}
+@media (max-width:980px){.t-finder,.t-side{grid-column:1/-1}.t-side{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.t-finder{grid-template-columns:1fr}.t-side{grid-template-columns:1fr}}
+
+.face-box{position:relative;background:var(--c-bg);border-radius:4px;padding:10px;display:grid;place-items:center}
+.face-box svg{width:100%;max-width:220px;height:auto}
+.face-box .ln{fill:none;stroke:var(--c-fg);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.face-box .zone{fill:var(--c-gold);fill-opacity:0;stroke:var(--c-gold);stroke-opacity:0;stroke-width:1;cursor:pointer;transition:fill-opacity .25s,stroke-opacity .25s}
+.face-box .zone:hover{fill-opacity:.18;stroke-opacity:.6}
+.face-box .zone.on{fill-opacity:.38;stroke-opacity:1}
+.face-box .body-note{position:absolute;inset:auto 10px 10px 10px;font-size:12px;text-align:center;color:var(--c-mut);background:var(--c-tile);padding:8px;border-radius:4px;border:1px solid var(--c-line)}
+.c-finder-ui{display:grid;gap:16px;align-content:start;min-width:0}
+.c-finder-ui h2{font-family:var(--f-oswald);text-transform:uppercase;font-weight:600;font-size:clamp(28px,3vw,40px);line-height:1}
+.c-chips{display:flex;flex-wrap:wrap;gap:6px}
+.c-chips button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--c-line);background:var(--c-tile);color:var(--c-fg);padding:8px 12px;border-radius:4px;cursor:pointer;transition:all .15s}
+.c-chips button:hover{border-color:var(--c-fg)}
+.c-chips button[aria-pressed="true"]{background:var(--c-ink);border-color:var(--c-ink);color:#fff}
+.c-chips.cats button{font-size:12px;color:var(--c-mut);background:transparent}
+.c-chips.cats button[aria-pressed="true"]{background:var(--c-gold);border-color:var(--c-gold);color:var(--c-ink)}
+.c-sub{font-size:12px;color:var(--c-mut);font-weight:600;letter-spacing:.04em}
+.c-list{display:grid;gap:8px}
+.c-item{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:center;padding:16px;border:1px solid var(--c-line);border-radius:4px;background:var(--c-tile)}
+.c-item h3{font-family:var(--f-oswald);text-transform:uppercase;font-weight:500;font-size:20px;line-height:1.1}
+.c-item .cat{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-gold)}
+.c-item p{grid-column:1/-1;font-size:14px;color:var(--c-mut)}
+.c-item a{grid-row:1/3;grid-column:2;align-self:start;font-family:var(--f-oswald);text-transform:uppercase;letter-spacing:.06em;font-size:13px;text-decoration:none;color:var(--c-ink);border:1px solid var(--c-ink);padding:8px 12px;border-radius:4px;white-space:nowrap}
+.c-item a:hover{background:var(--c-ink);color:#fff}
+@media (max-width:640px){.c-item{grid-template-columns:1fr}.c-item a{grid-row:auto;grid-column:1;justify-self:start}}
+
+.t-doc{display:grid;gap:14px}
+.t-doc .av{width:64px;height:64px;border-radius:4px;background:#2E2A26;display:grid;place-items:center;color:var(--c-gold);font-family:var(--f-oswald);font-size:22px}
+.t-doc h3{font-family:var(--f-oswald);text-transform:uppercase;font-weight:500;font-size:26px;line-height:1}
+.t-doc p{font-size:14px;color:#BDB4A8}
+.t-doc ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:13px}
+.t-doc li{display:flex;gap:10px;align-items:baseline}
+.t-doc li::before{content:"";width:6px;height:6px;background:var(--c-gold);flex:none;transform:translateY(-2px)}
+.t-steps{display:grid;gap:12px}
+.t-steps ol{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.t-steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.t-steps .k{font-family:var(--f-oswald);font-size:24px;font-weight:600;line-height:1;color:var(--c-gold)}
+.t-steps b{display:block;font-family:var(--f-oswald);text-transform:uppercase;font-weight:500;font-size:16px}
+.t-steps span{font-size:13px;color:var(--c-mut)}
+
+.c-sec{padding-block:72px;border-top:1px solid var(--c-line)}
+.c-sec h2{font-family:var(--f-oswald);text-transform:uppercase;font-weight:600;font-size:clamp(34px,5vw,64px);line-height:.95}
+.c-two{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.c-faq{grid-column:span 7;display:grid;gap:8px}
+.c-faq details{background:var(--c-tile);border:1px solid var(--c-line);border-radius:4px;padding:0 18px}
+.c-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding-block:18px;font-weight:700;font-size:16px}
+.c-faq summary::-webkit-details-marker{display:none}
+.c-faq summary::after{content:"+";font-family:var(--f-oswald);font-size:22px;color:var(--c-gold);line-height:1}
+.c-faq details[open] summary::after{content:"–"}
+.c-faq p{color:var(--c-mut);padding-bottom:18px;font-size:15px}
+.c-faq-head{grid-column:span 5;display:grid;gap:18px;align-content:start}
+.c-faq-head p{color:var(--c-mut);max-width:40ch}
+@media (max-width:900px){.c-faq,.c-faq-head{grid-column:1/-1}}
+.c-visit{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:28px}
+.c-visit .tile{display:grid;gap:8px;align-content:start}
+.c-visit .v1{grid-column:span 4}.c-visit .v2{grid-column:span 4}.c-visit .v3{grid-column:span 4}
+.c-visit .val{font-family:var(--f-oswald);text-transform:uppercase;font-size:22px;font-weight:500;line-height:1.15}
+.c-visit small{color:var(--c-mut);font-size:13px}
+.c-visit .tile.dark small{color:#BDB4A8}
+.c-mapline{grid-column:1/-1;min-height:220px;position:relative;overflow:hidden;padding:0}
+.c-mapline svg{position:absolute;inset:0;width:100%;height:100%}
+.c-mapline .c-btn{position:absolute;right:16px;bottom:16px}
+@media (max-width:900px){.c-visit .v1,.c-visit .v2,.c-visit .v3{grid-column:1/-1}}
+
+.c-foot{background:var(--c-ink);color:#BDB4A8;padding-block:48px 120px;font-size:14px}
+.c-foot .wrap{display:grid;gap:22px}
+.c-foot .big{font-family:var(--f-oswald);text-transform:uppercase;font-weight:600;color:#fff;font-size:clamp(34px,7vw,88px);line-height:.95}
+.c-foot .big span{color:var(--c-gold)}
+.c-foot .legal{border-top:1px solid #3A3632;padding-top:20px;max-width:82ch}
+.c-foot .links{display:flex;gap:20px;flex-wrap:wrap}
+.c-foot a{color:#fff}
+
+/* ===== Fotos y sección de la especialista ===== */
+/* A */
+.a-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.a-portrait figcaption{z-index:1;bottom:0;padding:48px 12px 16px;background:linear-gradient(transparent,rgba(16,14,12,.88));color:var(--a-fg)}
+.a-spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.a-spec-media{position:relative;padding-bottom:64px;min-width:0}
+.a-spec-media .m1{display:block;width:82%;aspect-ratio:4/5;max-width:100%;object-fit:cover;object-position:50% 15%;border:1px solid var(--a-gold)}
+.a-spec-media .m2{position:absolute;right:0;bottom:0;width:44%;aspect-ratio:3/4;object-fit:cover;border:6px solid var(--a-bg);outline:1px solid var(--a-line)}
+.a-spec-media .sig{position:absolute;left:0;bottom:12px;font-family:var(--f-cormorant);font-style:italic;font-size:22px;color:var(--a-gold)}
+.a-spec-txt{display:grid;gap:20px;min-width:0}
+.a-spec-txt h2{font-size:clamp(46px,6.4vw,92px);line-height:.92}
+.a-spec-txt h2 em{color:var(--a-gold)}
+.a-spec-txt .role{justify-self:start;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-block:1px solid var(--a-gold);padding-block:10px}
+.a-spec-txt blockquote{margin:0;font-family:var(--f-cormorant);font-style:italic;font-size:clamp(24px,2.6vw,32px);line-height:1.2}
+.a-spec-txt > p{color:var(--a-mut);max-width:58ch}
+.a-hl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.a-hl li{display:flex;gap:12px;align-items:baseline}
+.a-hl li::before{content:"";width:16px;height:1px;background:var(--a-gold);flex:none;transform:translateY(-5px)}
+@media (max-width:860px){.a-spec-grid{grid-template-columns:1fr;gap:36px}}
+.a-gal{border-bottom:1px solid var(--a-line)}
+.a-gal-row{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:12px;padding-block:64px}
+.a-gal-row figure{margin:0;display:grid;gap:10px;min-width:0}
+.a-gal-row img{display:block;width:100%;height:clamp(280px,34vw,440px);object-fit:cover}
+.a-gal-row figcaption{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--a-mut)}
+@media (max-width:860px){.a-gal-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;padding-block:40px}.a-gal-row figure{scroll-snap-align:start}}
+/* B */
+.b-arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.b-spec-media{position:relative;padding-bottom:56px;min-width:0}
+.b-spec-media .m1{display:block;width:84%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:220px 220px 28px 28px}
+.b-spec-media .m2{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:1;object-fit:cover;border-radius:24px;border:6px solid var(--b-sand-2)}
+.b-role{font-size:15px;font-weight:500;color:var(--b-coffee)}
+.b-hl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.b-hl li{display:flex;gap:10px;align-items:flex-start;color:var(--b-fg);font-size:16px}
+.b-hl svg{width:20px;height:20px;color:var(--b-gold);flex:none;margin-top:2px}
+.b-tcard .ph{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px}
+@media (max-width:900px){.b-spec-media{max-width:420px}}
+/* C */
+.t-doc-ph{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 12%;border-radius:4px}
+.c-spec-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.c-spec-ph{grid-column:span 5;margin:0;padding:0;position:relative;overflow:hidden;min-height:460px}
+.c-spec-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.c-spec-ph figcaption.c-strip{position:absolute;left:16px;bottom:16px;right:16px;margin:0;width:max-content;max-width:calc(100% - 32px)}
+.c-spec-txt{grid-column:span 7;display:grid;gap:18px;align-content:start;padding:32px}
+.c-spec-txt h2{font-family:var(--f-oswald);text-transform:uppercase;font-weight:600;font-size:clamp(40px,5.4vw,72px);line-height:.92;color:#fff}
+.c-spec-txt .c-strip{margin:0;justify-self:start}
+.c-spec-txt p{color:#CFC7BC;max-width:56ch}
+.c-hl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.c-hl li{display:flex;gap:10px;border:1px solid #3A3632;border-radius:4px;padding:12px 14px;font-size:14px;color:#EDE7DD}
+.c-hl li::before{content:"";width:6px;height:6px;background:var(--c-gold);flex:none;margin-top:8px}
+.c-cred{display:flex;gap:28px;flex-wrap:wrap;font-family:var(--f-oswald);text-transform:uppercase;font-size:20px;color:#fff}
+.c-cred small{display:block;font-family:var(--f-manrope);font-size:11px;letter-spacing:.1em;color:var(--c-gold);font-weight:700}
+.c-ph-row{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.c-ph-row figure{margin:0;position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/3;max-width:100%}
+.c-ph-row img{display:block;width:100%;height:100%;object-fit:cover}
+.c-ph-row figcaption{position:absolute;left:10px;bottom:10px;background:var(--c-ink);color:#fff;font-family:var(--f-oswald);text-transform:uppercase;font-size:12px;letter-spacing:.08em;padding:5px 9px;border-radius:3px}
+@media (max-width:900px){.c-spec-ph,.c-spec-txt{grid-column:1/-1}.c-spec-ph{min-height:400px}.c-spec-txt{padding:24px}.c-hl{grid-template-columns:1fr}.c-ph-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:76%;overflow-x:auto;scroll-snap-type:x mandatory}.c-ph-row figure{scroll-snap-align:start}}
+
+/* Movimiento */
+@media (prefers-reduced-motion:no-preference){
+  .site:not([hidden]) .rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .site:not([hidden]) .rise.d2{animation-delay:.08s}
+  .site:not([hidden]) .rise.d3{animation-delay:.16s}
+  @keyframes rise{from{opacity:.001;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<!-- ===== Selector de demo ===== -->
+<nav class="demo-bar" aria-label="Opciones de diseño">
+  <div class="wrap">
+    <div class="demo-tag"><b>Demo</b> · Life System Solution</div>
+    <div class="demo-tabs" role="list">
+      <a href="#opcion-a" data-tab="a" role="listitem"><span>A</span> <em>Editorial de autora</em></a>
+      <a href="#opcion-b" data-tab="b" role="listitem"><span>B</span> <em>Calma clínica</em></a>
+      <a href="#opcion-c" data-tab="c" role="listitem"><span>C</span> <em>Guía por zonas</em></a>
+    </div>
+  </div>
+</nav>
+
+<!-- =====================================================
+     OPCIÓN A
+     ===================================================== -->
+<div class="site opt-a" id="site-a" data-site="a">
+  <header class="a-head">
+    <div class="wrap">
+      <a class="a-logo" href="#opcion-a" aria-label="LifeSystem Estétic, inicio">
+        <span class="mono">Ls</span>
+        <span class="nm">LifeSystem Estétic<small>Medicina estética · Miraflores</small></span>
+      </a>
+      <nav class="a-nav" aria-label="Menú">
+        <a href="#a-doctora">La especialista</a><a href="#a-tratamientos">Tratamientos</a><a href="#a-proceso">Proceso</a><a href="#a-contacto">Contacto</a>
+      </nav>
+      <a class="a-btn sm" data-wa href="#">Agendar evaluación</a>
+    </div>
+  </header>
+
+  <section class="a-hero" aria-labelledby="a-h1">
+    <canvas id="silk" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow rise">Miraflores · Lima</p>
+        <h1 id="a-h1" class="disp rise d2">Medicina estética con evaluación <em>personalizada</em></h1>
+        <p class="lead rise d3">Tratamientos faciales y corporales en Miraflores, planificados según tu anatomía y tus objetivos.</p>
+        <div class="acts rise d3">
+          <a class="a-btn" data-wa href="#">Agendar evaluación por WhatsApp</a>
+          <a class="a-btn ghost" href="#a-tratamientos">Ver tratamientos</a>
+        </div>
+      </div>
+      <figure class="a-portrait rise d2" style="margin:0">
+        <img src="img/doctora-1.jpg" alt="Dra. Valeria Ríos, médico especialista en medicina estética, con blazer blanco">
+        <figcaption>Dra. Valeria Ríos · Especialista</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="a-sec" id="a-doctora" aria-labelledby="a-h-doc">
+    <div class="wrap a-spec-grid">
+      <div class="a-spec-media">
+        <img class="m1" src="img/doctora-2.jpg" alt="Dra. Valeria Ríos sonriendo, con blazer blanco" loading="lazy">
+        <img class="m2" src="img/mascarilla-dorada.jpg" alt="Aplicación de una mascarilla dorada durante un tratamiento facial" loading="lazy">
+        <span class="sig">V. Ríos</span>
+      </div>
+      <div class="a-spec-txt">
+        <p class="eyebrow">La especialista</p>
+        <h2 id="a-h-doc" class="disp">Dra. Valeria <em>Ríos</em></h2>
+        <p class="role">Médico cirujano · Especialista en medicina estética</p>
+        <blockquote>Prefiero explicarte qué es adecuado para ti antes que venderte un procedimiento.</blockquote>
+        <p>Atiendo en Miraflores y trabajo con protocolos que se definen después de revisar tu caso: tu anatomía, tu piel, tus antecedentes y lo que esperas lograr. En cada consulta te explico qué se aplica, cuántas sesiones podrías necesitar y cómo será el seguimiento.</p>
+        <ul class="a-hl">
+          <li>Planes armoniosos, definidos según tu anatomía</li>
+          <li>Speaker para marcas de medicina estética</li>
+          <li>Medicina estética basada en ciencia y seguridad</li>
+          <li>Atención personalizada en Miraflores, Lima</li>
+        </ul>
+        <div>
+          <dl class="a-creds">
+            <div><dt>Colegiatura</dt><dd>CMP 000000</dd></div>
+            <div><dt>Especialidad</dt><dd>RNE 00000</dd></div>
+            <div><dt>Además</dt><dd>Speaker</dd></div>
+          </dl>
+          <p style="font-size:12px;color:var(--a-mut);margin-top:12px">Datos de ejemplo para la demo. En la web final solo se muestran registros verificados.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="a-btn" data-wa href="#">Agendar con la doctora</a><a class="a-btn ghost" href="#a-tratamientos">Conocer tratamientos</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="a-sec" id="a-tratamientos" aria-labelledby="a-h-tr">
+    <div class="wrap">
+      <div class="a-sec-head">
+        <div><p class="eyebrow">Tratamientos</p><h2 id="a-h-tr" class="disp" style="margin-top:14px">Índice de tratamientos</h2></div>
+        <p>Nueve tratamientos en cuatro líneas. El protocolo de cada uno se define en la evaluación médica.</p>
+      </div>
+      <div class="a-filters" role="group" aria-label="Filtrar por categoría" data-filters="a"></div>
+      <ol class="a-index" data-list="a" aria-live="polite"></ol>
+    </div>
+  </section>
+
+  <section class="a-gal" aria-label="El consultorio">
+    <div class="wrap a-gal-row">
+      <figure><img src="img/consultorio.jpg" alt="Sala de espera luminosa del consultorio" loading="lazy"><figcaption>Consultorio en Miraflores</figcaption></figure>
+      <figure><img src="img/atencion.jpg" alt="Profesional con guantes atendiendo a una paciente en camilla" loading="lazy"><figcaption>Evaluación y atención</figcaption></figure>
+      <figure><img src="img/labios.jpg" alt="Primer plano de un tratamiento facial en la zona de los labios" loading="lazy"><figcaption>Armonización</figcaption></figure>
+      <figure><img src="img/estantes.jpg" alt="Estantes con productos de cuidado de la piel" loading="lazy"><figcaption>Cuidado de la piel</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="a-sec" id="a-proceso" aria-labelledby="a-h-pr">
+    <div class="wrap">
+      <div class="a-sec-head">
+        <div><p class="eyebrow">Cómo funciona</p><h2 id="a-h-pr" class="disp" style="margin-top:14px">Tres pasos, sin apuro</h2></div>
+        <p>Desde tu primer mensaje hasta el plan de tratamiento.</p>
+      </div>
+      <ol class="a-steps" data-steps="a"></ol>
+      <div style="margin-top:44px"><a class="a-btn" data-wa href="#">Agendar evaluación</a></div>
+    </div>
+  </section>
+
+  <section class="a-sec" aria-labelledby="a-h-faq">
+    <div class="wrap">
+      <div class="a-sec-head">
+        <div><p class="eyebrow">Preguntas frecuentes</p><h2 id="a-h-faq" class="disp" style="margin-top:14px">Antes de escribir</h2></div>
+        <p>Si tu duda no está aquí, escríbenos por WhatsApp.</p>
+      </div>
+      <div class="a-faq" data-faq="a"></div>
+      <div style="margin-top:36px"><a class="a-btn ghost" data-wa href="#">Escribir por WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="a-sec" id="a-contacto" aria-labelledby="a-h-ct">
+    <div class="wrap">
+      <div class="a-sec-head">
+        <div><p class="eyebrow">Ubicación y contacto</p><h2 id="a-h-ct" class="disp" style="margin-top:14px">Te esperamos en Miraflores</h2></div>
+        <p>Atención con cita previa.</p>
+      </div>
+      <div class="a-visit">
+        <dl>
+          <div><dt>Dirección</dt><dd>Av. Principal 000, of. 000<small>Miraflores, Lima · dirección de ejemplo</small></dd></div>
+          <div><dt>Horario</dt><dd>Lun a vie · 10:00 a 19:00<small>Sábados · 9:00 a 13:00</small></dd></div>
+          <div><dt>WhatsApp</dt><dd data-phone>+51 993 877 564</dd></div>
+          <div class="a-social" aria-label="Redes"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></div>
+        </dl>
+        <div class="a-map" role="img" aria-label="Mapa ilustrativo de Miraflores">
+          <svg class="lines" viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="#3A322A" stroke-width="1">
+            <path d="M-10 90 L410 40M-10 200 L410 150M-10 290 L410 250M80 -10 L130 330M220 -10 L240 330M330 -10 L300 330"/>
+            <path d="M-10 250 C120 200 260 230 410 110" stroke="#A9844C" stroke-width="2"/>
+            <circle cx="215" cy="135" r="30" stroke="#5A4C3C"/>
+          </svg>
+          <span class="pin"></span>
+          <a class="a-btn sm" href="https://www.google.com/maps/search/?api=1&query=Miraflores%2C+Lima" target="_blank" rel="noopener" style="position:relative">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="a-foot">
+    <div class="wrap">
+      <p class="big">LifeSystem <em>Estétic</em></p>
+      <p class="legal">La información de esta web es orientativa y no reemplaza una evaluación médica. Los resultados pueden variar según cada persona. Todo procedimiento médico puede tener riesgos, que se explican durante la consulta.</p>
+      <div class="links"><a href="#a-doctora">Política de privacidad</a><a href="#a-tratamientos">Tratamientos</a><a href="#a-contacto">Contacto</a><span>Demo de diseño · Life System Solution SAC · Fotos referenciales de Unsplash</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- =====================================================
+     OPCIÓN B
+     ===================================================== -->
+<div class="site opt-b" id="site-b" data-site="b" hidden>
+  <header class="b-head">
+    <div class="wrap">
+      <a class="b-logo" href="#opcion-b" aria-label="LifeSystem Estétic, inicio">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#E8DED2"/><path d="M17 8c-4 5-4 12 0 18 4-6 4-13 0-18z" fill="none" stroke="#5E4638" stroke-width="1.4"/><path d="M17 26c-3-3-7-4-10-3M17 26c3-3 7-4 10-3" fill="none" stroke="#A8844F" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <span class="nm">LifeSystem Estétic<small>Medicina estética en Miraflores</small></span>
+      </a>
+      <nav class="b-nav" aria-label="Menú">
+        <a href="#b-doctora">Especialista</a><a href="#b-tratamientos">Tratamientos</a><a href="#b-proceso">Cómo funciona</a><a href="#b-faq">Preguntas</a><a href="#b-contacto">Contacto</a>
+      </nav>
+      <a class="b-btn sm" data-wa href="#">Agendar evaluación</a>
+    </div>
+  </header>
+
+  <section class="b-hero" aria-labelledby="b-h1">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow rise">Evaluación médica primero</p>
+        <h1 id="b-h1" class="disp rise d2">Medicina estética con evaluación <i>personalizada</i></h1>
+        <p class="lead rise d3">Tratamientos faciales y corporales en Miraflores, planificados según tu anatomía y tus objetivos.</p>
+        <div class="acts rise d3">
+          <a class="b-btn" data-wa href="#">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            Agendar evaluación por WhatsApp</a>
+          <a class="b-btn light" href="#b-tratamientos">Ver tratamientos</a>
+        </div>
+        <div class="b-trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7.5-7 9-4-1.5-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Atención médica</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Con cita previa</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Miraflores, Lima</span>
+        </div>
+      </div>
+      <div class="b-hero-visual rise d2">
+        <div class="b-arch">
+          <img src="img/doctora-2.jpg" alt="Dra. Valeria Ríos, especialista en medicina estética, sonriendo con blazer blanco">
+        </div>
+        <div class="b-card-float"><b>Dra. Valeria Ríos</b><span>Médico cirujano · Medicina estética</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-sec alt" id="b-doctora" aria-labelledby="b-h-doc">
+    <div class="wrap b-about">
+      <div class="b-spec-media">
+        <img class="m1" src="img/doctora-1.jpg" alt="Retrato de la Dra. Valeria Ríos con blazer blanco" loading="lazy">
+        <img class="m2" src="img/consultorio.jpg" alt="Sala de espera del consultorio en Miraflores" loading="lazy">
+      </div>
+      <div class="txt">
+        <p class="eyebrow">La especialista</p>
+        <h2 id="b-h-doc" class="disp">Soy la Dra. Valeria Ríos y me gusta que entiendas cada paso.</h2>
+        <p class="b-role">Médico cirujano · Especialista en medicina estética</p>
+        <p>Atiendo en Miraflores. Antes de cualquier tratamiento reviso tu caso, te explico qué es adecuado para ti y qué no, y definimos juntas un plan con sus cuidados y su seguimiento.</p>
+        <ul class="b-hl">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Planes armoniosos, definidos según tu anatomía</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Speaker para marcas de medicina estética</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg>Medicina estética basada en ciencia y seguridad</li>
+        </ul>
+        <div class="b-pills"><span>CMP 000000</span><span>RNE 00000</span><span>Speaker en medicina estética</span></div>
+        <p style="font-size:13px">Registros de ejemplo. En la web final solo se muestran datos verificados.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="b-btn sm" data-wa href="#">Agendar con la doctora</a><a class="b-btn light sm" href="#b-tratamientos">Conocer tratamientos</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-sec" id="b-tratamientos" aria-labelledby="b-h-tr">
+    <div class="wrap">
+      <div class="b-sec-head">
+        <p class="eyebrow">Tratamientos</p>
+        <h2 id="b-h-tr" class="disp">Elige lo que te interesa y conversemos</h2>
+        <p>Cada protocolo se define después de una evaluación médica. Toca “Consultar” y te llega un mensaje listo para enviar.</p>
+      </div>
+      <div class="b-filters" role="group" aria-label="Filtrar por categoría" data-filters="b"></div>
+      <div class="b-grid" data-list="b" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="b-sec alt" id="b-proceso" aria-labelledby="b-h-pr">
+    <div class="wrap">
+      <div class="b-sec-head">
+        <p class="eyebrow">Cómo funciona</p>
+        <h2 id="b-h-pr" class="disp">Del primer mensaje a tu plan, en tres pasos</h2>
+      </div>
+      <ol class="b-steps" data-steps="b"></ol>
+      <div class="b-center"><a class="b-btn" data-wa href="#">Agendar evaluación</a></div>
+    </div>
+  </section>
+
+  <section class="b-sec" id="b-faq" aria-labelledby="b-h-faq">
+    <div class="wrap b-faq-wrap">
+      <div class="b-sec-head" style="margin:0">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 id="b-h-faq" class="disp">Lo que suelen preguntarnos</h2>
+        <p>¿Tienes otra duda? Escríbenos y te respondemos.</p>
+        <div><a class="b-btn light sm" data-wa href="#">Escribir por WhatsApp</a></div>
+      </div>
+      <div class="b-faq" data-faq="b"></div>
+    </div>
+  </section>
+
+  <section class="b-sec alt" id="b-contacto" aria-labelledby="b-h-ct">
+    <div class="wrap b-visit">
+      <div class="b-info">
+        <h3 id="b-h-ct">Visítanos en Miraflores</h3>
+        <dl>
+          <div><dt>Dirección</dt><dd>Av. Principal 000, of. 000, Miraflores<br><small style="opacity:.75">Dirección de ejemplo</small></dd></div>
+          <div><dt>Horario</dt><dd>Lunes a viernes, 10:00 a 19:00<br>Sábados, 9:00 a 13:00</dd></div>
+          <div><dt>WhatsApp</dt><dd data-phone>+51 993 877 564</dd></div>
+          <div><dt>Redes</dt><dd><a href="https://www.instagram.com/" target="_blank" rel="noopener" style="color:inherit">Instagram</a> · <a href="https://www.tiktok.com/" target="_blank" rel="noopener" style="color:inherit">TikTok</a> · <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="color:inherit">Facebook</a></dd></div>
+        </dl>
+        <a class="b-btn" data-wa href="#">Agendar evaluación</a>
+      </div>
+      <div class="b-map" role="img" aria-label="Mapa ilustrativo de Miraflores">
+        <svg viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none">
+          <path d="M-10 70 L410 30M-10 170 L410 130M-10 270 L410 240M70 -10 L120 350M200 -10 L215 350M320 -10 L300 350" stroke="#F7F3EE" stroke-width="8"/>
+          <path d="M-10 230 C120 190 250 210 410 100" stroke="#D2C1AC" stroke-width="12"/>
+          <circle cx="210" cy="140" r="12" fill="#5E4638"/><circle cx="210" cy="140" r="26" fill="#5E4638" fill-opacity=".14"/>
+        </svg>
+        <div class="chip"><div><b>LifeSystem Estétic</b><span>Miraflores, Lima</span></div><a class="b-btn sm" href="https://www.google.com/maps/search/?api=1&query=Miraflores%2C+Lima" target="_blank" rel="noopener">Cómo llegar</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="b-foot">
+    <div class="wrap">
+      <div class="top"><p class="disp">Tu tranquilidad también es parte del tratamiento.</p><a class="b-btn" data-wa href="#" style="background:#F7F3EE;color:#5E4638">Agendar evaluación</a></div>
+      <p class="legal">La información de esta web es orientativa y no reemplaza una evaluación médica. Los resultados pueden variar según cada persona. Todo procedimiento médico puede tener riesgos, que se explican durante la consulta.</p>
+      <div class="links"><a href="#b-doctora">Política de privacidad</a><a href="#b-tratamientos">Tratamientos</a><a href="#b-contacto">Contacto</a><span>LifeSystem Estétic · Demo de diseño por Life System Solution SAC · Fotos referenciales de Unsplash</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- =====================================================
+     OPCIÓN C
+     ===================================================== -->
+<div class="site opt-c" id="site-c" data-site="c" hidden>
+  <header class="c-head">
+    <div class="wrap">
+      <a class="c-logo" href="#opcion-c" aria-label="LifeSystem Estétic, inicio">
+        <span class="sq">LS</span>
+        <span class="nm">LifeSystem Estétic<small>Medicina estética · Miraflores</small></span>
+      </a>
+      <nav class="c-nav" aria-label="Menú"><a href="#c-guia">Guía por zonas</a><a href="#c-especialista">Especialista</a><a href="#c-faq">Preguntas</a><a href="#c-contacto">Contacto</a></nav>
+      <a class="c-btn sm" data-wa href="#">Agendar</a>
+    </div>
+  </header>
+
+  <section class="c-hero" aria-labelledby="c-h1">
+    <div class="wrap">
+      <h1 id="c-h1" class="rise">Medicina estética<br>con evaluación <span class="g">personalizada</span></h1>
+      <span class="c-strip rise d2">Médico cirujano · Medicina estética · Miraflores, Lima</span>
+      <div class="c-hero-row rise d3">
+        <p>Tratamientos faciales y corporales en Miraflores, planificados según tu anatomía y tus objetivos.</p>
+        <div class="acts"><a class="c-btn gold" data-wa href="#">Agendar evaluación por WhatsApp</a><a class="c-btn" href="#c-guia">Explorar por zona</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="c-bento" id="c-guia">
+      <section class="tile t-finder" aria-labelledby="c-h-guia">
+        <div class="face-box">
+          <svg viewBox="0 0 200 260" role="img" aria-label="Rostro con zonas de tratamiento">
+            <path class="ln" d="M100 22C146 22 166 58 165 110C164 160 140 204 100 214C60 204 36 160 35 110C34 58 54 22 100 22Z"/>
+            <path class="ln" d="M76 210L72 256M124 210L128 256" />
+            <path class="ln" d="M62 94Q75 87 88 93M112 93Q125 87 138 94"/>
+            <path class="ln" d="M65 107Q75 101 86 107Q75 112 65 107ZM114 107Q125 101 135 107Q125 112 114 107Z"/>
+            <path class="ln" d="M100 106L95 143Q100 149 107 144"/>
+            <path class="ln" d="M82 170Q92 164 100 168Q108 164 118 170Q100 183 82 170Z"/>
+            <path class="ln" d="M60 40Q100 20 140 40" opacity=".35"/>
+            <ellipse class="zone" data-zone="frente" cx="100" cy="64" rx="44" ry="18"/>
+            <ellipse class="zone" data-zone="ojeras" cx="75" cy="119" rx="14" ry="6"/>
+            <ellipse class="zone" data-zone="ojeras" cx="125" cy="119" rx="14" ry="6"/>
+            <ellipse class="zone" data-zone="nariz" cx="100" cy="130" rx="9" ry="18"/>
+            <ellipse class="zone" data-zone="labios" cx="100" cy="171" rx="22" ry="10"/>
+            <ellipse class="zone" data-zone="rostro" cx="62" cy="146" rx="14" ry="16"/>
+            <ellipse class="zone" data-zone="rostro" cx="138" cy="146" rx="14" ry="16"/>
+            <ellipse class="zone" data-zone="papada" cx="100" cy="204" rx="30" ry="9"/>
+            <ellipse class="zone" data-zone="cuello" cx="100" cy="238" rx="27" ry="13"/>
+          </svg>
+          <p class="body-note" data-bodynote hidden>Cuerpo: abdomen, espalda, laterales y brazos</p>
+        </div>
+        <div class="c-finder-ui">
+          <span class="lbl">Guía por zonas</span>
+          <h2 id="c-h-guia">¿Qué zona te interesa?</h2>
+          <div class="c-chips" role="group" aria-label="Filtrar por zona" data-zones></div>
+          <span class="c-sub">O por categoría</span>
+          <div class="c-chips cats" role="group" aria-label="Filtrar por categoría" data-filters="c"></div>
+          <div class="c-list" data-list="c" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <div class="t-side">
+        <section class="tile dark t-doc" aria-labelledby="c-h-doc">
+          <span class="lbl">Sobre la doctora</span>
+          <img class="t-doc-ph" src="img/doctora-1.jpg" alt="Dra. Valeria Ríos con blazer blanco">
+          <h3 id="c-h-doc">Dra. Valeria Ríos</h3>
+          <p>Médico cirujano con enfoque en medicina estética. Cada plan se define después de evaluar tu caso.</p>
+          <a class="c-btn gold sm" href="#c-especialista" style="justify-self:start">Conocer a la especialista</a>
+        </section>
+        <section class="tile gold t-steps" aria-labelledby="c-h-pr">
+          <span class="lbl" style="color:#7A5A22">Cómo funciona</span>
+          <h3 id="c-h-pr" class="cond" style="font-size:24px">Tres pasos</h3>
+          <ol data-steps="c"></ol>
+          <a class="c-btn sm" data-wa href="#" style="justify-self:start">Agendar evaluación</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <section class="c-sec" id="c-especialista" aria-labelledby="c-h-spec">
+    <div class="wrap c-spec-grid">
+      <figure class="tile c-spec-ph">
+        <img src="img/doctora-2.jpg" alt="Dra. Valeria Ríos sonriendo, con blazer blanco" loading="lazy">
+        <figcaption class="c-strip">Dra. Valeria Ríos</figcaption>
+      </figure>
+      <div class="tile dark c-spec-txt">
+        <span class="lbl">La especialista</span>
+        <h2 id="c-h-spec">Dra. Valeria<br>Ríos</h2>
+        <span class="c-strip">Médico cirujano · Especialista en medicina estética</span>
+        <p>Atiende en Miraflores con un criterio simple: primero evaluar, después tratar. Cada protocolo se define según tu anatomía, tu piel y tus objetivos, y te explica cada paso antes de empezar.</p>
+        <ul class="c-hl">
+          <li>Planes armoniosos, definidos según tu anatomía</li>
+          <li>Speaker para marcas de medicina estética</li>
+          <li>Medicina estética basada en ciencia y seguridad</li>
+          <li>Atención personalizada en Miraflores</li>
+        </ul>
+        <div class="c-cred"><span><small>Colegiatura</small>CMP 000000</span><span><small>Especialidad</small>RNE 00000</span><span><small>Datos</small>De ejemplo</span></div>
+        <a class="c-btn gold" data-wa href="#" style="justify-self:start">Agendar con la doctora</a>
+      </div>
+      <div class="c-ph-row">
+        <figure><img src="img/consultorio.jpg" alt="Sala de espera del consultorio" loading="lazy"><figcaption>Consultorio</figcaption></figure>
+        <figure><img src="img/atencion.jpg" alt="Atención de una paciente en camilla" loading="lazy"><figcaption>Evaluación</figcaption></figure>
+        <figure><img src="img/mascarilla-dorada.jpg" alt="Mascarilla dorada aplicada en el rostro" loading="lazy"><figcaption>Tratamientos</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-sec" id="c-faq" aria-labelledby="c-h-faq">
+    <div class="wrap c-two">
+      <div class="c-faq-head">
+        <h2 id="c-h-faq">Preguntas<br>frecuentes</h2>
+        <p>Evaluación, sesiones, cambios esperados y ubicación. Si te queda una duda, escríbenos.</p>
+        <div><a class="c-btn" data-wa href="#">Escribir por WhatsApp</a></div>
+      </div>
+      <div class="c-faq" data-faq="c"></div>
+    </div>
+  </section>
+
+  <section class="c-sec" id="c-contacto" aria-labelledby="c-h-ct">
+    <div class="wrap">
+      <h2 id="c-h-ct">Ubicación<br>y contacto</h2>
+      <div class="c-visit">
+        <div class="tile v1"><span class="lbl">Dirección</span><span class="val">Av. Principal 000, of. 000</span><small>Miraflores, Lima · dirección de ejemplo</small></div>
+        <div class="tile v2"><span class="lbl">Horario</span><span class="val">Lun–vie 10:00–19:00</span><small>Sábados 9:00–13:00 · con cita previa</small></div>
+        <div class="tile dark v3"><span class="lbl">WhatsApp</span><span class="val" data-phone>+51 993 877 564</span><small><a href="https://www.instagram.com/" target="_blank" rel="noopener" style="color:inherit">Instagram</a> · <a href="https://www.tiktok.com/" target="_blank" rel="noopener" style="color:inherit">TikTok</a> · <a href="https://www.facebook.com/" target="_blank" rel="noopener" style="color:inherit">Facebook</a></small></div>
+        <div class="tile c-mapline" role="img" aria-label="Mapa ilustrativo de Miraflores">
+          <svg viewBox="0 0 1000 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none">
+            <path d="M0 60H1000M0 150H1000M160 0V220M420 0V220M700 0V220" stroke="#EFE9DE" stroke-width="10"/>
+            <path d="M0 200C250 150 520 170 1000 40" stroke="#F1E6CF" stroke-width="16"/>
+            <rect x="404" y="88" width="32" height="32" fill="#B8893B"/><rect x="380" y="64" width="80" height="80" fill="#B8893B" fill-opacity=".14"/>
+          </svg>
+          <a class="c-btn" href="https://www.google.com/maps/search/?api=1&query=Miraflores%2C+Lima" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="c-foot">
+    <div class="wrap">
+      <p class="big">LifeSystem <span>Estétic</span></p>
+      <p class="legal">La información de esta web es orientativa y no reemplaza una evaluación médica. Los resultados pueden variar según cada persona. Todo procedimiento médico puede tener riesgos, que se explican durante la consulta.</p>
+      <div class="links"><a href="#c-guia">Política de privacidad</a><a href="#c-guia">Tratamientos</a><a href="#c-contacto">Contacto</a><span>Demo de diseño · Life System Solution SAC · Fotos referenciales de Unsplash</span></div>
+    </div>
+  </footer>
+</div>
+
+<a class="wa-float" data-wa href="#" aria-label="Agendar evaluación por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+  <span class="wa-txt">Agendar por WhatsApp</span>
+</a>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"LifeSystem Estétic","description":"Medicina estética facial y corporal en Miraflores, Lima, con evaluación médica personalizada.","telephone":"+51993877564","address":{"@type":"PostalAddress","addressLocality":"Miraflores","addressRegion":"Lima","addressCountry":"PE"},"medicalSpecialty":"Dermatology","openingHours":["Mo-Fr 10:00-19:00","Sa 09:00-13:00"]}
+</script>
+
+<script>
+(function(){
+  var WA = '51993877564';
+  var MSG = 'Hola, doctora. Quisiera agendar una evaluación.';
+  function wa(m){ return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(m); }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  var CATS = ['Contorno','Bioestimuladores','Armonización','Rejuvenecimiento'];
+  var IMG = {'Contorno':'img/piel.jpg','Bioestimuladores':'img/serum.jpg','Armonización':'img/labios.jpg','Rejuvenecimiento':'img/atencion.jpg'};
+  var T = [
+    {n:'Enzimas corporales', c:'Contorno', z:['cuerpo'], d:'Tratamiento orientado a ayudar a reducir la grasa localizada y mejorar el contorno corporal en zonas como abdomen, espalda, laterales y brazos. El protocolo se define tras una evaluación médica.'},
+    {n:'Enzimas de rostro y papada', c:'Contorno', z:['papada'], d:'Tratamiento orientado a ayudar a reducir la grasa localizada en el rostro y la papada, para mejorar la definición del contorno facial. El protocolo se define tras una evaluación médica.'},
+    {n:'Bioestimuladores faciales', c:'Bioestimuladores', z:['rostro'], d:'Tratamiento inyectable que estimula la producción de colágeno para mejorar la firmeza, la elasticidad y la calidad de la piel. Ayuda a prevenir y tratar la flacidez, con cambios progresivos.'},
+    {n:'Bioestimuladores de ojeras', c:'Bioestimuladores', z:['ojeras'], d:'Tratamiento que estimula la producción natural de colágeno en la zona de las ojeras. Busca mejorar la calidad de la piel, la firmeza y la apariencia de bolsas o hendiduras, con cambios progresivos.'},
+    {n:'Bioestimuladores de cuello', c:'Bioestimuladores', z:['cuello'], d:'Tratamiento que estimula la producción natural de colágeno en el cuello. Busca mejorar la firmeza, la elasticidad y la calidad de la piel, y ayuda a prevenir y tratar la flacidez y las líneas del cuello.'},
+    {n:'Armonización facial', c:'Armonización', z:['rostro','labios','nariz'], d:'Tratamiento con ácido hialurónico para armonizar y realzar el perfil facial mediante la proyección de labios, nariz y mentón. Se planifica según tu anatomía tras una evaluación médica.'},
+    {n:'Armonización de labios', c:'Armonización', z:['labios'], d:'Tratamiento con ácido hialurónico para armonizar y mejorar la forma de los labios. Se planifica según tu anatomía tras una evaluación médica.'},
+    {n:'Armonización de nariz', c:'Armonización', z:['nariz'], d:'Tratamiento con ácido hialurónico para armonizar y realzar el perfil nasal. Se planifica según tu anatomía tras una evaluación médica.'},
+    {n:'Trío rejuvenecimiento', c:'Rejuvenecimiento', z:['frente'], d:'Tratamiento con toxina botulínica en frente, entrecejo y patas de gallo para prevenir y suavizar las arrugas de expresión.'}
+  ];
+  var ZONES = [['todas','Todas'],['frente','Frente y mirada'],['ojeras','Ojeras'],['nariz','Nariz'],['labios','Labios'],['rostro','Rostro'],['papada','Papada'],['cuello','Cuello'],['cuerpo','Cuerpo']];
+  var STEPS = [
+    ['Escríbenos','Cuéntanos qué tratamiento te interesa y coordinamos tu cita.'],
+    ['Evaluación médica','La doctora revisa tu caso y define si el tratamiento es adecuado para ti.'],
+    ['Plan personalizado','Recibes indicaciones sobre el protocolo, los cuidados y el seguimiento.']
+  ];
+  var FAQ = [
+    ['¿Necesito una evaluación antes del tratamiento?','Sí. Cada protocolo se define después de una evaluación médica.'],
+    ['¿Cuántas sesiones voy a necesitar?','Depende del tratamiento y de tu caso. La doctora te lo indicará durante la evaluación.'],
+    ['¿Cuándo se notan los cambios?','Depende del tratamiento y de cada persona. Por ejemplo, los bioestimuladores tienen un efecto progresivo.'],
+    ['¿Cuál es el precio?','Te informamos el precio por WhatsApp, según el tratamiento y tu caso.'],
+    ['¿Dónde atienden?','En Av. Principal 000, of. 000, Miraflores (dirección de ejemplo). Te enviamos la referencia para llegar al agendar.']
+  ];
+  var ARROW = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>';
+  function tLink(t){ return wa('Hola, doctora. Quisiera información sobre ' + t.n.toLowerCase().replace(/^./, function(c){return c;}) + '.'); }
+
+  /* WhatsApp general */
+  document.querySelectorAll('[data-wa]').forEach(function(a){ a.href = wa(MSG); a.target = '_blank'; a.rel = 'noopener'; });
+
+  /* Pasos y preguntas */
+  document.querySelector('[data-steps="a"]').innerHTML = STEPS.map(function(s,i){ return '<li><div class="k">' + (i+1) + '</div><h3>' + s[0] + '</h3><p>' + s[1] + '</p></li>'; }).join('');
+  document.querySelector('[data-steps="b"]').innerHTML = STEPS.map(function(s,i){ return '<li><span class="num">' + (i+1) + '</span><h3>' + s[0] + '</h3><p>' + s[1] + '</p></li>'; }).join('');
+  document.querySelector('[data-steps="c"]').innerHTML = STEPS.map(function(s,i){ return '<li><span class="k">0' + (i+1) + '</span><div><b>' + s[0] + '</b><span>' + s[1] + '</span></div></li>'; }).join('');
+  ['a','b','c'].forEach(function(o){
+    document.querySelector('[data-faq="' + o + '"]').innerHTML = FAQ.map(function(f,i){ return '<details' + (i===0?' open':'') + '><summary>' + f[0] + '</summary><p>' + f[1] + '</p></details>'; }).join('');
+  });
+
+  /* Filtros por categoría (A y B) */
+  function catButtons(el, withCount){
+    var all = [['Todos', T.length]].concat(CATS.map(function(c){ return [c, T.filter(function(t){return t.c===c;}).length]; }));
+    el.innerHTML = all.map(function(c,i){ return '<button type="button" data-cat="' + c[0] + '" aria-pressed="' + (i===0) + '">' + c[0] + (withCount ? '<span class="ct">' + c[1] + '</span>' : '') + '</button>'; }).join('');
+  }
+  function renderA(cat){
+    var list = T.map(function(t,i){ return {t:t,i:i}; }).filter(function(x){ return cat==='Todos' || x.t.c===cat; });
+    document.querySelector('[data-list="a"]').innerHTML = list.map(function(x){
+      return '<li><span class="n">' + String(x.i+1).padStart(2,'0') + '</span><h3>' + esc(x.t.n) + '<span class="cat">' + x.t.c + '</span></h3><p>' + esc(x.t.d) + '</p><a href="' + tLink(x.t) + '" target="_blank" rel="noopener">Consultar</a></li>';
+    }).join('');
+  }
+  function renderB(cat){
+    var list = T.filter(function(t){ return cat==='Todos' || t.c===cat; });
+    document.querySelector('[data-list="b"]').innerHTML = list.map(function(t){
+      return '<article class="b-tcard"><img class="ph" src="' + IMG[t.c] + '" alt="" loading="lazy"><span class="tag">' + t.c + '</span><h3>' + esc(t.n) + '</h3><p>' + esc(t.d) + '</p><a href="' + tLink(t) + '" target="_blank" rel="noopener">Consultar por WhatsApp ' + ARROW + '</a></article>';
+    }).join('');
+  }
+  [['a',renderA,false],['b',renderB,true]].forEach(function(cfg){
+    var el = document.querySelector('[data-filters="' + cfg[0] + '"]');
+    catButtons(el, cfg[2]);
+    el.addEventListener('click', function(e){
+      var b = e.target.closest('button'); if(!b) return;
+      el.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', String(x===b)); });
+      cfg[1](b.dataset.cat);
+    });
+    cfg[1]('Todos');
+  });
+
+  /* Opción C: zonas + categorías */
+  var zEl = document.querySelector('[data-zones]');
+  var cEl = document.querySelector('[data-filters="c"]');
+  var bodyNote = document.querySelector('[data-bodynote]');
+  zEl.innerHTML = ZONES.map(function(z,i){ return '<button type="button" data-z="' + z[0] + '" aria-pressed="' + (i===0) + '">' + z[1] + '</button>'; }).join('');
+  cEl.innerHTML = CATS.map(function(c){ return '<button type="button" data-cat="' + c + '" aria-pressed="false">' + c + '</button>'; }).join('');
+  function renderC(type, v){
+    zEl.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(type==='zone' && b.dataset.z===v)); });
+    cEl.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(type==='cat' && b.dataset.cat===v)); });
+    document.querySelectorAll('.face-box .zone').forEach(function(z){
+      var on = (type==='zone' && z.dataset.zone===v) || (type==='cat' && T.some(function(t){ return t.c===v && t.z.indexOf(z.dataset.zone)>-1; }));
+      z.classList.toggle('on', on);
+    });
+    bodyNote.hidden = !((type==='zone' && v==='cuerpo') || (type==='cat' && v==='Contorno'));
+    var list = T.filter(function(t){
+      if(type==='zone') return v==='todas' || t.z.indexOf(v)>-1;
+      return t.c===v;
+    });
+    document.querySelector('[data-list="c"]').innerHTML = list.map(function(t){
+      return '<article class="c-item"><div><span class="cat">' + t.c + '</span><h3>' + esc(t.n) + '</h3></div><a href="' + tLink(t) + '" target="_blank" rel="noopener">Consultar</a><p>' + esc(t.d) + '</p></article>';
+    }).join('');
+  }
+  zEl.addEventListener('click', function(e){ var b = e.target.closest('button'); if(b) renderC('zone', b.dataset.z); });
+  cEl.addEventListener('click', function(e){ var b = e.target.closest('button'); if(b) renderC('cat', b.dataset.cat); });
+  document.querySelectorAll('.face-box .zone').forEach(function(z){
+    z.setAttribute('tabindex','0'); z.setAttribute('role','button');
+    var label = ZONES.filter(function(x){ return x[0]===z.dataset.zone; })[0][1];
+    z.setAttribute('aria-label','Ver tratamientos: ' + label);
+    z.addEventListener('click', function(){ renderC('zone', z.dataset.zone); });
+    z.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); renderC('zone', z.dataset.zone); } });
+  });
+  renderC('zone','todas');
+
+  /* Selector de opción por hash */
+  var IDS = {'opcion-a':'a','opcion-b':'b','opcion-c':'c'};
+  function show(){
+    var h = (location.hash || '').slice(1);
+    var opt = IDS[h];
+    if(!opt){
+      var target = h && document.getElementById(h);
+      var site = target && target.closest('[data-site]');
+      opt = site ? site.dataset.site : (document.body.dataset.opt || 'a');
+    }
+    var changed = document.body.dataset.opt !== opt;
+    document.body.dataset.opt = opt;
+    document.querySelectorAll('[data-site]').forEach(function(s){ s.hidden = s.dataset.site !== opt; });
+    document.querySelectorAll('[data-tab]').forEach(function(t){ if(t.dataset.tab===opt) t.setAttribute('aria-current','page'); else t.removeAttribute('aria-current'); });
+    if(IDS[h] && changed) window.scrollTo(0,0);
+    else if(!IDS[h] && h && changed){ var tg = document.getElementById(h); if(tg) tg.scrollIntoView(); }
+    if(opt==='a') startSilk();
+  }
+  window.addEventListener('hashchange', show);
+
+  /* Ondas doradas (Opción A) */
+  var cv = document.getElementById('silk'), ctx = cv.getContext('2d'), raf = null, t0 = 0;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){ var r = cv.getBoundingClientRect(), d = Math.min(window.devicePixelRatio||1, 2); cv.width = r.width*d; cv.height = r.height*d; ctx.setTransform(d,0,0,d,0,0); }
+  function draw(t){
+    var w = cv.width/(Math.min(window.devicePixelRatio||1,2)), h = cv.height/(Math.min(window.devicePixelRatio||1,2));
+    ctx.clearRect(0,0,w,h);
+    for(var k=0;k<26;k++){
+      var g = ctx.createLinearGradient(0,0,w,0);
+      var a = 0.05 + 0.22*Math.sin((k/26)*Math.PI);
+      g.addColorStop(0,'rgba(210,176,122,0)'); g.addColorStop(.45,'rgba(210,176,122,'+a.toFixed(3)+')'); g.addColorStop(1,'rgba(169,132,76,'+(a*0.6).toFixed(3)+')');
+      ctx.strokeStyle = g; ctx.lineWidth = 1;
+      ctx.beginPath();
+      for(var x=0;x<=w;x+=12){
+        var p = x/w;
+        var y = h*0.78 - p*h*0.42 + Math.sin(p*3.2 + k*0.16 + t*0.00025)*h*0.10 + k*3.2 - 40;
+        if(x===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      }
+      ctx.stroke();
+    }
+  }
+  function loop(t){ if(document.body.dataset.opt!=='a'){ raf=null; return; } draw(t); raf = requestAnimationFrame(loop); }
+  function startSilk(){ size(); if(reduce){ draw(0); return; } if(!raf) raf = requestAnimationFrame(loop); }
+  window.addEventListener('resize', function(){ if(document.body.dataset.opt==='a'){ size(); if(reduce) draw(0); } });
+
+  show();
+})();
+</script>
+
+</html>
